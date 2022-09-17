@@ -1,18 +1,14 @@
-import React, { useState } from 'react'
-import quotes from './json/quotes.json';
-export default function randomQuote() {
-console.log(quotes.length);
-const rQuote = arr => Math.floor(Math.random() * arr.length);
-const firstPhrase = quotes[rQuote(quotes)]
-const [RandomQuote, setRandomQuote] = useState(firstPhrase)
-const getRandom= () =>{
-    setRandomQuote(quotes[rQuote(quotes)])
-}
-return (
-    <div>
+import React from 'react'
+import Button from './Button';
+
+export const QuoteBox = ({RandomQuote,RandomColors}) => {
+    console.log(RandomColors.borderColor);
+  return (
+    <div className='caja1 ' style={{borderColor:RandomColors.borderColor, color: RandomColors.letterColor}}>
         <h1>""{RandomQuote.quote}""</h1>
         <h3>--{RandomQuote.author}</h3>
-        <button onClick={getRandom}> > </button>
+        
     </div>
-)
+  )
 }
+ export default QuoteBox
