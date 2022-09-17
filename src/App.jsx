@@ -27,8 +27,8 @@ function App() {
     <div style={{backgroundColor: RandomColors.bgColor }} className="App">
       <QuoteBox RandomQuote={RandomQuote} RandomColors={RandomColors} />
 
-        <div className="button1"> 
-          <button style={{borderColor: RandomColors.borderColor }} onClick={getRandom} > push </button>
+        <div className="button1">
+        <Button RandomColors={RandomColors} getRandom={getRandom}/>
         </div>
         
     </div>

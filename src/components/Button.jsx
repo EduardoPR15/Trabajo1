@@ -1,10 +1,10 @@
 import React from 'react'
 
-export const Button = ({RandomColors}) => {
-
+function Button({getRandom,RandomColors}) { 
+    console.log(RandomColors);
 return (
     <div className="button1"> 
-    <button style={{borderColor: RandomColors.borderColor }} onClick={getRandom} > push </button>
+    <button onClick={getRandom} style={{borderColor: RandomColors.borderColor, color: RandomColors.letterColor}} > Change </button>
 </div>
 
 )}

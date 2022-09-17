@@ -10,6 +10,7 @@ body{
     width: 100%;
     min-height: 100vh;
     padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 .caja1{
@@ -41,19 +42,16 @@ h3{
     margin: auto;
     width: 90px;
     height:90px;
-    bottom: 45px;
+    bottom: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
 }
-.button2{
-    position: relative;
-    top: 40px;
-    left: 92.5%;
-    width: 9vh;
-    height:9vh;
-    border-radius: 100%;
-}
+
+
 .button1 button{
     border-radius: 100%;
     width: 100%;
     height: 100%;
     border: 5px solid;
+    font-size: 1.2em;
 }
